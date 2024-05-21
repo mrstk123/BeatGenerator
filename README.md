@@ -21,7 +21,7 @@ This project is a .NET 8 API that generates a beat pattern based on input parame
    Open the solution in Visual Studio and restore the NuGet packages.
 
 3. **Run the API:**
-   Set the `BeatGeneratorApi` project as the startup project and run it.
+   Set the `BeatGenerator` project as the startup project and run it.
 
 4. **API Endpoints:**
    - `/generator/{i}/{j}`: Generates a beat pattern from `i` to `j`.
@@ -54,6 +54,7 @@ This project is a .NET 8 API that generates a beat pattern based on input parame
 
 Ensure that your `local.settings.json` in the Azure Functions project contains the following configuration:
 
+```json
 {
   "IsEncrypted": false,
   "Values": {
